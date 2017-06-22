@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>callback</title>
+<script type="text/javascript">
+	
+	var userProfile = {
+		name: 'kerry',
+		address: '2236 valmont st',
+		city: 'new orleans',
+		state: 'louisiana',
+		zipcode: '70115',
+		avatar: 'blue'
+	}
+	console.log(userProfile);
+
+	function getProfileUpdate(userProfile){
+		this.name = [];
+		this.address = [];
+		this.city = [];
+		this.state = [];
+		this.zip = [];
+		this.avatar = [];
+		return
+	}
+
+	console.log(getProfileUpdate());
+	console.log(userProfile.name, userProfile.city);
+	
+	function updateProfile(){
+		var userProfile = Object.assign({}, userProfile, {
+			city: 'Los Angeles',
+		});
+	}
+	console.log(updateProfile());
+</script>
+</head>
+<body>
+</body>
+</html>
